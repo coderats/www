@@ -1,6 +1,10 @@
 @import url(systematize.min.css);
+body {
+  font-size: 24px;
+  color: #1a1a1a; }
+
 main {
-  height: 100vh;
+  height: calc(100vh - 74px);
   display: flex;
   align-items: center;
   justify-content: center; }
