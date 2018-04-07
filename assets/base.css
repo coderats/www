@@ -1,0 +1,10 @@
+@import url(systematize.min.css);
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  main section {
+    max-width: 50%; }
+
+/*# sourceMappingURL=base.css.map */
