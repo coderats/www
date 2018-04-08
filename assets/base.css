@@ -8,7 +8,28 @@ main {
   display: flex;
   align-items: center;
   justify-content: center; }
-  main section {
+  main p {
+    display: block;
     max-width: 50%; }
+  main span.typed-cursor {
+    opacity: 1;
+    animation: typedjsBlink 0.8s infinite;
+    color: gold; }
+  main span.typed-fade-out {
+    opacity: 0;
+    transition: opacity .25s;
+    -webkit-animation: 0;
+    animation: 0; }
+
+@keyframes typedjsBlink {
+  50% {
+    opacity: 0.0; } }
+@-webkit-keyframes typedjsBlink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=base.css.map */

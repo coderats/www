@@ -10,7 +10,32 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  section {
+  p {
+    display: block;
     max-width: 50%;
+
   }
+  span {
+    &.typed-cursor {
+      opacity: 1;
+      animation: typedjsBlink 0.8s infinite;
+      color: gold;
+    }
+
+    &.typed-fade-out {
+      opacity: 0;
+      transition: opacity .25s;
+      -webkit-animation: 0;
+      animation: 0;
+    }
+  }
+}
+
+@keyframes typedjsBlink{
+  50% { opacity: 0.0; }
+}
+@-webkit-keyframes typedjsBlink{
+  0% { opacity: 1; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1; }
 }
